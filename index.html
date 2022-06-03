@@ -1,0 +1,88 @@
+<html>
+    <head>
+
+        <!-- <script src="script.js"></script> -->
+        <script
+            src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
+            defer>
+        </script>
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    </head>
+
+    <body onload="addEvent()">
+    	<script>
+		    function addEvent(){
+		        document.body.addEventListener("click", play)
+		    }
+		    function play() {
+		        var audio = document.getElementById("bgm");
+		        audio.play();
+		    }
+    	</script>
+
+
+
+		<div id="contents" >
+
+            <audio id="bgm" preload="auto" autoplay loop>
+                <source src="bgm.mp3" type="audio/mp3">
+            </audio>
+
+
+
+            <div>
+            
+            <p class="textContent" style="padding-top:20vw;padding-bottom:1300vw;"></p>
+            <!-- <p class="textContent" style="padding-top:50vw;padding-bottom:50vw;">ggg</p> -->
+            <!-- <p class="textContent" style="padding-top:50vw;padding-bottom:50vw;">ggg</p> -->
+
+            <model-viewer
+                class="vrContent"
+                style="width:100vw;height:100vw;max-width:95%;"
+                src="test.gltf"
+                ios-src="test.usdz"
+                alt=""
+                shadow-intensity="0.1"
+                exposure=".7"
+                camera-controls
+                environment-image="background.jpg"
+                auto-rotate
+                ar>
+                <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/>
+            </model-viewer>
+
+
+                <model-viewer
+                class="vrContent"
+                style="width:100vw;height:100vw;max-width:95%;"
+                src="tele.gltf"
+                ios-src="tele.usdz"
+                alt=""
+                shadow-intensity="0.1"
+                exposure=".7"
+                camera-controls
+                environment-image="background.jpg"
+                auto-rotate
+                ar>
+                <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/>
+            </model-viewer>
+
+                <model-viewer
+                class="vrContent"
+                style="width:100vw;height:100vw;max-width:95%;"
+                src="test.gltf"
+                ios-src="test.usdz"
+                alt=""
+                shadow-intensity="0.1"
+                exposure=".7"
+                camera-controls
+                environment-image="background.jpg"
+                auto-rotate
+                ar>
+                <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/>
+            </model-viewer>
+
+            </div>
+    </body>
+</html>
