@@ -65,15 +65,20 @@
 		{
 			"alphaMode":"BLEND",
 			"doubleSided":true,
+			"extensions":{
+				"KHR_materials_transmission":{
+					"transmissionFactor":1
+				}
+			},
 			"name":"Material",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
 					0.13249313831329346,
 					0.4541558623313904,
 					0.8013955950737,
-					0.03636366128921509
+					0.11363663524389267
 				],
-				"metallicFactor":0,
+				"metallicFactor":0.04545454680919647,
 				"roughnessFactor":0.019999999552965164
 			}
 		}
@@ -117,8 +122,8 @@
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"png-transparent-rgb-color-wheel-spectrum-selector-picker-thumbnail",
-			"uri":"png-transparent-rgb-color-wheel-spectrum-selector-picker-thumbnail.png"
+			"name":"\ub9e4\ud551",
+			"uri":"%EB%A7%A4%ED%95%91.png"
 		}
 	],
 	"accessors":[
